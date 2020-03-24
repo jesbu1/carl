@@ -1,5 +1,8 @@
 This is the code submitted for the ICML submission, Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings.
 
+![](./CARL_side_pic.png)
+
+
 This repository is based off of the original repository at [https://github.com/quanvuong/handful-of-trials-pytorch](https://github.com/quanvuong/handful-of-trials-pytorch), 
 whih is a Pytorch version of the original PETS paper repository located here: [PETS-Tensorflow](https://github.com/kchua/handful-of-trials).
 
