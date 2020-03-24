@@ -1,0 +1,6 @@
+[submodule "gym-duckietown"]
+	path = gym-duckietown
+	url = git@github.com:jesbu1/gym-duckietown.git
+[submodule "learning_to_adapt"]
+	path = learning_to_adapt
+	url = git@github.com:iclavera/learning_to_adapt.git
