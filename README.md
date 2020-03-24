@@ -1,10 +1,10 @@
-This is the code submitted for the ICML submission, Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings.
+This is the code submitted for the ICML submission, Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings (CARL).
 
-![](./CARL_side_pic.png)
+![The Safety-Critical Adaptation (SCA) task framework. In an initial “pretraining” phase, an agent is trained in various sandbox source environments without safety concerns, such as in a simulator. In the second “adaptation” phase, it aims to adapt to a safety-critical target environment, producing high rewards quickly and safely.](./CARL_side_pic.png)
 
 
 This repository is based off of the original repository at [https://github.com/quanvuong/handful-of-trials-pytorch](https://github.com/quanvuong/handful-of-trials-pytorch), 
-whih is a Pytorch version of the original PETS paper repository located here: [PETS-Tensorflow](https://github.com/kchua/handful-of-trials).
+which is a Pytorch version of the original PETS paper repository located here: [PETS-Tensorflow](https://github.com/kchua/handful-of-trials).
 
 ## Installation
 Clone this repository with `git clone --recursive https://github.com/jesbu1/carl.git`.
@@ -13,7 +13,7 @@ This recursively clone the two submodules required, `gym-duckietown` (code for t
 In order to experiment on MuJoco environments, you must have MuJoco 200 installed with an appropriate MuJuco license linked.
 See here to download MuJoco 200: [mujoco](https://www.roboti.us/index.html).
 
-To install the base packages required, simply `pip install -r requirements.txt`. (Tested with Python 3.6)
+To install the base packages required, simply `pip install -r requirements.txt` (Tested with Python 3.6).
 Then you must `pip install -e gym-duckietown` to install the modified Duckietown driving environment, and `pip install -e learning_to_adapt`
 to install the disabled joint Half-Cheetah environment code originally from GrBAL.
 
