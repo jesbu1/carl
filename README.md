@@ -1,6 +1,6 @@
-This is the code submitted for the ICML submission, Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings (CARL).
+# This is the code submitted for the ICML submission, Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings (CARL).
 
-![The Safety-Critical Adaptation (SCA) task framework. In an initial “pretraining” phase, an agent is trained in various sandbox source environments without safety concerns, such as in a simulator. In the second “adaptation” phase, it aims to adapt to a safety-critical target environment, producing high rewards quickly and safely.](./CARL_side_pic.png)
+![](./CARL_side_pic.png)
 
 
 This repository is based off of the original repository at [https://github.com/quanvuong/handful-of-trials-pytorch](https://github.com/quanvuong/handful-of-trials-pytorch), 
