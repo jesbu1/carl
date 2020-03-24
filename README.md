@@ -1,4 +1,4 @@
-# This is the code submitted for the ICML submission, Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings (CARL).
+# Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings (CARL).
 
 ![](./CARL_side_pic.png)
 
