@@ -64,9 +64,9 @@ class CartPoleConfigModule:
 
     @staticmethod
     def obs_cost_fn(obs):
-        ee_pos = CONFIG_MODULE._get_ee_pos(obs)
+        ee_pos, ideal_pos = CONFIG_MODULE._get_ee_pos(obs)
 
-        ee_pos -= CONFIG_MODULE.ee_sub
+        ee_pos -= ideal_pos
 
         ee_pos = ee_pos ** 2
 
@@ -83,7 +83,9 @@ class CartPoleConfigModule:
     @staticmethod
     def _get_ee_pos(obs):
         x0, theta, pendulum_length = obs[:, :1], obs[:, 1:2], obs[:, -2:-1]
-        return torch.cat([x0 + pendulum_length * torch.sin(theta), pendulum_length * torch.cos(theta)], dim=1)
+        ee_pos = torch.cat([x0 + pendulum_length * torch.sin(theta), pendulum_length * torch.cos(theta)], dim=1)
+        ideal_pos = torch.cat((torch.zeros_like(pendulum_length), pendulum_length), dim=-1)
+        return ee_pos, ideal_pos
 
     def nn_constructor(self, model_init_cfg):
 

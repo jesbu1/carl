@@ -10,7 +10,7 @@ This recursively clone the two submodules required, `gym-duckietown` (code for t
 In order to experiment on MuJoco environments, you must have MuJoco 200 installed with an appropriate MuJuco license linked.
 See here to download MuJoco 200: [mujoco](https://www.roboti.us/index.html).
 
-To install the base packages required, simply `pip install -r requirements.txt`.
+To install the base packages required, simply `pip install -r requirements.txt`. (Tested with Python 3.6)
 Then you must `pip install -e gym-duckietown` to install the modified Duckietown driving environment, and `pip install -e learning_to_adapt`
 to install the disabled joint Half-Cheetah environment code originally from GrBAL.
 
