@@ -13,7 +13,6 @@ from optimizers import CEMOptimizer, DiscreteCEMOptimizer, DiscreteRandomOptimiz
 import matplotlib.pyplot as plt
 
 from tqdm import trange
-from Controller import Controller
 
 import torch
 
@@ -24,7 +23,7 @@ def shuffle_rows(arr):
     return arr[np.arange(arr.shape[0])[:, None], idxs]
 
 
-class MPC(Controller):
+class MPC:
 
     def __init__(self, params):
         """Creates class instance.
@@ -81,7 +80,6 @@ class MPC(Controller):
                     .percentile (float): The percentile used for either catastrophic state or reward-based
                         risk aversion.
         """
-        super().__init__(params)
         self.dO, self.dU = params.env.observation_space.shape[0], params.env.action_space.shape[0]
         self.ac_ub, self.ac_lb = params.env.action_space.high, params.env.action_space.low
         self.ac_ub = np.minimum(self.ac_ub, params.get("ac_ub", self.ac_ub))
