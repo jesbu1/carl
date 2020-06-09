@@ -11,7 +11,7 @@ Clone this repository with `git clone --recursive https://github.com/jesbu1/carl
 This recursively clone the two submodules required, `gym-duckietown` (code for the modified [Duckietown](https://github.com/jesbu1/gym-duckietown.git) driving environment) and `learning_to_adapt` (code containing the [Half-Cheetah Disabled Joint environment](https://github.com/jesbu1/learning_to_adapt) from [GrBAL](https://arxiv.org/abs/1803.11347) .
 
 In order to experiment on MuJoco environments, you must have MuJoco 200 installed with an appropriate MuJuco license linked.
-See here to download and setup MuJoco 200: [mujoco](https://www.roboti.us/index.html). On Ubuntu, we had to install install some extra packages first: `sudo apt install -y libosmesa6-dev libgl1-mesa-glx libglfw3 patchelf`.
+See here to download and setup MuJoco 200: [mujoco](https://www.roboti.us/index.html). On Ubuntu, we had to install some extra packages first: `sudo apt install -y libosmesa6-dev libgl1-mesa-glx libglfw3 patchelf`.
 
 
 To install the base packages required, simply `pip install -r requirements.txt` (Tested with Python 3.6). 
@@ -60,3 +60,8 @@ In order to run the Duckietown car-driving environment, you need to have either 
 This is an unfortunate restriction of the original environment. One option is to create a Docker container,
 another is install xvfb and running `xvfb-run python mbexp.py ....`, however we have had limited luck in
 getting this to work on displayless servers.
+
+## Example Behaviors (Regular MBRL vs CARL)
+![Cartpole](readme_gifs/cartpole.gif)
+![Duckietown](readme_gifs/duckietown.gif)
+![Half-Cheetah Disabled](readme_gifs/half_cheetah.gif)
