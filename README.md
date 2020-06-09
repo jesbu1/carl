@@ -11,9 +11,10 @@ Clone this repository with `git clone --recursive https://github.com/jesbu1/carl
 This recursively clone the two submodules required, `gym-duckietown` (code for the modified [Duckietown](https://github.com/jesbu1/gym-duckietown.git) driving environment) and `learning_to_adapt` (code containing the [Half-Cheetah Disabled Joint environment](https://github.com/iclavera/learning_to_adapt.git) from [GrBAL](https://arxiv.org/abs/1803.11347) .
 
 In order to experiment on MuJoco environments, you must have MuJoco 200 installed with an appropriate MuJuco license linked.
-See here to download MuJoco 200: [mujoco](https://www.roboti.us/index.html).
+See here to download and setup MuJoco 200: [mujoco](https://www.roboti.us/index.html). On Ubuntu, we had to install install some extra packages first: `sudo apt install -y libosmesa6-dev libgl1-mesa-glx libglfw3 patchelf`.
 
-To install the base packages required, simply `pip install -r requirements.txt` (Tested with Python 3.6).
+
+To install the base packages required, simply `pip install -r requirements.txt` (Tested with Python 3.6). 
 Then you must `pip install -e gym-duckietown` to install the modified Duckietown driving environment, and `pip install -e learning_to_adapt`
 to install the disabled joint Half-Cheetah environment code originally from GrBAL.
 
@@ -37,7 +38,7 @@ To run CARL (Reward), you can run:
 This turns off catastrophe prediction. We train with percentile (gamma) = 100 and test_percentile (gamma) = 50 for all environments.
 
 To run MB + Finetune, you can run:
-`python mbexp.py --env ENV --no_catastrophe_pred`
+`python mbexp.py --env ENV --no_catastrophe_pred --test_percentile 100`
 
 ## Directory Structure
 Configuration files are located in `config/`, modify these python files to change some environment/model/training parameters.

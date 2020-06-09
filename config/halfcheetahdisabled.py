@@ -20,10 +20,10 @@ class HalfCheetahConfigModule:
     NTEST_ROLLOUTS = 1
     PLAN_HOR = 10
     MODEL_IN, MODEL_OUT = 25, 20
-    GP_NINDUCING_POINTS = 300
     COLLISION_COST = 10000
     MODEL_ENSEMBLE_SIZE = 5
     MODEL_HIDDEN_SIZE = 200
+    COLLISION_SIGMOID = torch.nn.Sigmoid()
     MODEL_WEIGHT_DECAYS = [2.5e-5, 5e-5, 7.5e-5, 7.5e-5, 1e-4]
 
     def __init__(self):
@@ -54,7 +54,8 @@ class HalfCheetahConfigModule:
 
         return torch.cat([
             obs[:, :-2] + pred[:, :-2],
-            pred[:, -2:],
+            pred[:, -2:-1],
+            CONFIG_MODULE.COLLISION_SIGMOID(pred[:, -1:]),
         ], dim=1)
 
     @staticmethod
@@ -70,7 +71,7 @@ class HalfCheetahConfigModule:
     @staticmethod
     def obs_cost_fn(obs):
         return -obs[:, -2]
-    
+
     @staticmethod
     def catastrophe_cost_fn(obs, cost, percentile):
         catastrophe_mask = obs[..., -1] > percentile / 100
