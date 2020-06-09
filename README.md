@@ -8,7 +8,7 @@ which is a Pytorch version of the original PETS paper repository located here: [
 
 ## Installation
 Clone this repository with `git clone --recursive https://github.com/jesbu1/carl.git`.
-This recursively clone the two submodules required, `gym-duckietown` (code for the modified [Duckietown](https://github.com/jesbu1/gym-duckietown.git) driving environment) and `learning_to_adapt` (code containing the [Half-Cheetah Disabled Joint environment](https://github.com/iclavera/learning_to_adapt.git) from [GrBAL](https://arxiv.org/abs/1803.11347) .
+This recursively clone the two submodules required, `gym-duckietown` (code for the modified [Duckietown](https://github.com/jesbu1/gym-duckietown.git) driving environment) and `learning_to_adapt` (code containing the [Half-Cheetah Disabled Joint environment](https://github.com/jesbu1/learning_to_adapt) from [GrBAL](https://arxiv.org/abs/1803.11347) .
 
 In order to experiment on MuJoco environments, you must have MuJoco 200 installed with an appropriate MuJuco license linked.
 See here to download and setup MuJoco 200: [mujoco](https://www.roboti.us/index.html). On Ubuntu, we had to install install some extra packages first: `sudo apt install -y libosmesa6-dev libgl1-mesa-glx libglfw3 patchelf`.
