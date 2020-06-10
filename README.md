@@ -2,8 +2,10 @@
 
 ![](./CARL_side_pic.png)
 
+This is the repository for our work, [Cautious Adaptation for RL in Safety-Critical Settings (CARL)](). TODO: Fill in arxiv link.
 
-This repository is based off of the original repository at [https://github.com/quanvuong/handful-of-trials-pytorch](https://github.com/quanvuong/handful-of-trials-pytorch), 
+
+Our code is based off of the repository at [https://github.com/quanvuong/handful-of-trials-pytorch](https://github.com/quanvuong/handful-of-trials-pytorch), 
 which is a Pytorch version of the original PETS paper repository located here: [PETS-Tensorflow](https://github.com/kchua/handful-of-trials).
 
 ## Installation
@@ -65,3 +67,7 @@ getting this to work on displayless servers.
 ![Cartpole](readme_gifs/cartpole.gif)
 ![Duckietown](readme_gifs/duckietown.gif)
 ![Half-Cheetah Disabled](readme_gifs/half_cheetah.gif)
+
+
+## Cite our work
+You can cite CARL with this example bibtex
