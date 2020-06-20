@@ -62,7 +62,7 @@ class EnsembleModel(nn.Module):
         logvar = inputs[:, :, self.out_features // 2:-1]
         logvar = self.max_logvar - F.softplus(self.max_logvar - logvar)
         logvar = self.min_logvar + F.softplus(logvar - self.min_logvar)
-        catastrophe_pred = logvar[..., -1:]
+        catastrophe_pred = inputs[..., -1:]
         if ret_logvar:
             return mean, logvar, catastrophe_pred
 
