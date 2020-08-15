@@ -21,7 +21,9 @@ Then you must `pip install -e gym-duckietown` to install the modified Duckietown
 to install the disabled joint Half-Cheetah environment code originally from GrBAL.
 
 ## Running Experiments
-Experiments for a particular environment can be run using:
+For PDDM Baoding Hand manipulation experiments, see this repo [here](https://github.com/jesbu1/pddm).
+
+Experiments for the other three environments can be run using:
 
 ```
 python mbexp.py
