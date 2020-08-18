@@ -2,7 +2,7 @@
 
 ![](./CARL_side_pic.png)
 
-This is the repository for our work, [Cautious Adaptation for RL in Safety-Critical Settings (CARL)](). TODO: Fill in arxiv link.
+This is the repository for our work, [Cautious Adaptation for RL in Safety-Critical Settings (CARL)](https://arxiv.org/abs/2008.06622).
 
 
 Our code is based off of the repository at [https://github.com/quanvuong/handful-of-trials-pytorch](https://github.com/quanvuong/handful-of-trials-pytorch), 
