@@ -74,10 +74,17 @@ getting this to work on displayless servers.
 ## Cite our work
 You can cite CARL with this example bibtex
 `@misc{zhang2020cautious,
+
     title={Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings},
+    
     author={Jesse Zhang and Brian Cheung and Chelsea Finn and Sergey Levine and Dinesh Jayaraman},
+    
     year={2020},
+    
     eprint={2008.06622},
+    
     archivePrefix={arXiv},
+    
     primaryClass={cs.LG}
+    
 }`
