@@ -80,5 +80,4 @@ You can cite CARL with this example bibtex
     eprint={2008.06622},
     archivePrefix={arXiv},
     primaryClass={cs.LG}
-    
 }```
