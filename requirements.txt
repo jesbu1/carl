@@ -22,6 +22,6 @@ pyprind==2.11.2
 PyYAML==5.3
 pyzmq==18.1.1
 tensorboardX==2.0
-tensorflow==1.14.0
+tensorflow==2.5.0
 mujoco_py==2.0.2
 cffi
