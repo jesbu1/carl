@@ -74,12 +74,20 @@ getting this to work on displayless servers.
 ## Cite our work
 You can cite CARL with this example bibtex
 ```
-@misc{zhang2020cautious,
-    title={Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings},
-    author={Jesse Zhang and Brian Cheung and Chelsea Finn and Sergey Levine and Dinesh Jayaraman},
-    year={2020},
-    eprint={2008.06622},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+@InProceedings{pmlr-v119-zhang20e,
+  title = 	 {Cautious Adaptation For Reinforcement Learning in Safety-Critical Settings},
+  author =       {Zhang, Jesse and Cheung, Brian and Finn, Chelsea and Levine, Sergey and Jayaraman, Dinesh},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {11055--11065},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/zhang20e/zhang20e.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/zhang20e.html},
+  abstract = 	 {Reinforcement learning (RL) in real-world safety-critical target settings like urban driving is hazardous, imperiling the RL agent, other agents, and the environment. To overcome this difficulty, we propose a "safety-critical adaptation" task setting: an agent first trains in non-safety-critical "source" environments such as in a simulator, before it adapts to the target environment where failures carry heavy costs. We propose a solution approach, CARL, that builds on the intuition that prior experience in diverse environments equips an agent to estimate risk, which in turn enables relative safety through risk-averse, cautious adaptation. CARL first employs model-based RL to train a probabilistic model to capture uncertainty about transition dynamics and catastrophic states across varied source environments. Then, when exploring a new safety-critical environment with unknown dynamics, the CARL agent plans to avoid actions that could lead to catastrophic states. In experiments on car driving, cartpole balancing, and half-cheetah locomotion, CARL successfully acquires cautious exploration behaviors, yielding higher rewards with fewer failures than strong RL adaptation baselines.}
 }
+
 ```
