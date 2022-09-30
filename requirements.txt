@@ -1,4 +1,4 @@
-joblib==0.14.0
+joblib==1.2.0
 opencv_python==4.1.0.25
 dataclasses==0.6
 PyGeometry==1.5.6
